@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My App</title>
+	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+</head>
+	<body>
+
+		<style>
+
+			#comboCracker {
+				text-decoration: none;
+				color: #5DC1E3;
+				border: 1px solid #F2F2F2;
+				border-radius: 5px;
+				padding: 10px 10px;
+			}
+
+
+
+		</style>
+		<div class="container">
+			<div class="topbar" style="margin-top: 20px">
+				<a id="comboCracker" href="/">Home</a>
+				<a id="comboCracker" href="/cracker">Combo Cracker</a>
+				<a id="comboCracker" href="/facebook">Facebook</a>
+			</div>
+
+
+			<h1 style="font-family: 'Shree Devanagari 714'; margin-top: 20px">To Do List</h1>
+				<ul>
+					<% for (var i = 0; i < items.length; i++ ){ %>
+					<li style="font-family: 'Shree Devanagari 714'"><%= items[i].desc %></li>
+					<% } %>
+				</ul>
+
+
+				<!--Add ACTION using POST -->
+				<form action="/add" method="post">
+					<input type="text" name="newItem"></input>
+					<input type="submit">
+				</form>
+
+		</div>
+
+		<!--
+		<form action="/hello" method="post">
+			<% var contrib = 0 %>
+			<input type="submit"><a name="contribution"> Contributers: <%= contrib %>
+		</form> -->
+
+		<script src="bootstrap/dist/js/bootstrap.js"></script>
+		<script src="jquery/dist/jquery.js"></script>
+	</body>
+</html>
