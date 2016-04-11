@@ -1,0 +1,39 @@
+* {
+	
+	font-family: "Shree Devanagari 714"	;
+	font-color: #F2F2F2;
+}
+
+
+.container {
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.form1{
+	float: left;
+	display: inline-block;
+}
+
+.form2{
+	display: inline-block;
+	float: left;
+}
+
+#comboCracker {
+		text-decoration: none;
+		color: #5DC1E3;
+		border: 1px solid #F2F2F2;
+		border-radius: 5px;
+		padding: 10px 10px;
+	}
+			
+
+.downloadBTN {
+		text-decoration: none;
+		color: #5DC1E3;
+		border: 1px solid #F2F2F2;
+		border-radius: 5px;
+		padding: 10px 10px;
+		background-color: #fff;
+		}

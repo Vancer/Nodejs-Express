@@ -4,22 +4,12 @@
 	<meta charset="UTF-8">
 	<title>My App</title>
 	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="bootstrap/dist/css/custom.css">
 </head>
 	<body>
 
-		<style>
-
-			#comboCracker {
-				text-decoration: none;
-				color: #5DC1E3;
-				border: 1px solid #F2F2F2;
-				border-radius: 5px;
-				padding: 10px 10px;
-			}
 
 
-
-		</style>
 		<div class="container">
 			<div class="topbar" style="margin-top: 20px">
 				<a id="comboCracker" href="/">Home</a>
@@ -41,8 +31,39 @@
 					<input type="text" name="newItem"></input>
 					<input type="submit">
 				</form>
+				<br>
 
+
+				<div  id="nodeContainer">
+
+					<center>
+						<h1>NodeJS Download</h1>
+
+					<form style="display: inline" action="/NodeJSwin32" action="/GET">
+					<h2>Windows</h2>
+					<br>
+						<form  class="form1" action="/NodeJSwin32" method="GET">
+							<input id="win32" type="radio" class="type" name="type" value="32bit">  32bit</input>
+							<input class="downloadBTN"type="submit" value="Download">
+						</form>
+
+						<form class="form2" style="position: absolute" action="/NodeJSwin64" method="GET">
+							<input id="win64" type="radio" class="type" name="type" value="64bit">  64bit</input>
+							<input class="downloadBTN"type="submit" value="Download">
+						</form>
+					</form>
+					<br />
+					<br>
+					<br>
+					<form style="display: inline" action="/NodeJSosx" action="/GET">
+						<h2>Macintosh</h2>
+						<input class="downloadBTN" type="submit" value="Download">
+					</form>
+				</div>
+				</center>
 		</div>
+
+
 
 		<!--
 		<form action="/hello" method="post">

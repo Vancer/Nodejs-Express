@@ -65,6 +65,20 @@ app.get('/facebook', function(req,res){
 });
 
 
+//Getting NodeJS
+app.get('/NodeJSwin32', function(req, res){
+	res.redirect('https://nodejs.org/dist/v4.4.2/node-v4.4.2-x86.msi');
+});
+
+app.get('/NodeJSwin64', function(req, res){
+	res.redirect('https://nodejs.org/dist/v4.4.2/node-v4.4.2-x64.msi');
+});
+
+app.get('/NodeJSosx', function(req, res){
+	res.redirect('https://nodejs.org/dist/v5.10.1/node-v5.10.1.pkg');
+});
+
+
 //Hello Function
 /*app.post('/hello', function(req, res){
   var contrib = req.body.contribution;
